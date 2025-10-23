@@ -1,3 +1,7 @@
+'use client'
+
+import { FormEvent } from 'react'
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -12,9 +16,6 @@ export default function HomePage() {
           Get Started
         </button>
       </div>
-    </main>
-  )
-}
 
       {/* Contact Form - Supabase Integration */}
       <section className="py-16 bg-gray-50">
@@ -49,7 +50,9 @@ export default function HomePage() {
             <button type="submit" className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700">
               Send Message
             </button>
-          </
+          </form>
+        </div>
+      </section>
 
       {/* Pricing - Stripe Integration */}
       <section className="py-16 bg-white">
@@ -71,6 +74,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-form>
-        </div>
-      </section>
+    </main>
+  )
+}
